@@ -1,4 +1,4 @@
-# knights_tour
+# Knight's Tour
 
 Find the hamiltonian path for a knight on a chessboard, such that they make 63 legal moves and visit each sqare of an 8x8 chessboard exactly once. 
 
