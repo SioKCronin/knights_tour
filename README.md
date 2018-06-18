@@ -1,6 +1,7 @@
-# Knight's Tour
+# Knight's Tour Problem
 
-Find the hamiltonian path for a knight on a chessboard, such that they make 63 legal moves and visit each sqare of an 8x8 chessboard exactly once. 
+The objective is to find the hamiltonian path for a knight on a chessboard, such that they make 63 legal moves and visit each sqare of an 8x8 chessboard exactly once. We will represent the problem as a graph, with each square on the board representing
+a vertex, and the legal moves between squares represented as edges. 
 
 For context on the scope of the problem, the total search space is 5.02e58 (legal 63 move tours around the board), the number of open tours is 1.31e35 and the approx number of closed tours is 1.33e13. 
 
@@ -14,4 +15,5 @@ Recurse over smaller subboards and then stitch together solution.
 
 ## Ant Colony Optimization (ACO)
 
-Hingston & Kendell (2004) implemented this variation, exploring both *open* and *closed* tours (ending one legal move away from the knight's starting position). 
+Hingston & Kendell (2004) implemented this variation, exploring both *open* and *closed* tours (ending one legal move away from the knight's starting position). The authors found that one advantage of working with a population-method is that an ant
+starting on one square can learn from ants starting on remote squares. 
